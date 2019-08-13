@@ -1,2 +1,14 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Le monde vous tend les bras</h1>
+          <p class="lead text-muted">Rejoignez un groupe local pour rencontrer du monde, tester une nouvelle activité ou partager vos passions.</p>
+        <% if !user_signed_in? %>
+          <p>
+            <a href="<%= new_user_registration_path %>" class="btn btn-primary my-2">Rejoindre Thinkr</a>
+          </p>
+         <% end %>
+
+        </div>
+</section>
+
+

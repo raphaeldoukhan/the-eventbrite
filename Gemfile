@@ -67,3 +67,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faker', '~> 1.4', '>= 1.4.3'
 gem 'table_print', '~> 1.5', '>= 1.5.6'
 gem 'devise', '~> 4.2'
+gem 'javascript', '~> 0.1.0'

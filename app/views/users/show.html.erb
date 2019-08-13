@@ -1,0 +1,19 @@
+<body class="d-flex flex-column h-100">
+  <div class="container">
+    <main role="main" class="my-auto">
+    <h1 class="mt-5"><%= @user.first_name%> <%= @user.last_name%></h1>
+    <p>Description :<br/>
+    <%= @user.description%>
+    </p>
+    <p>E-mail : <%= @user.email%></p>
+    <p>Crée le <%= @user.created_at.strftime("%d/%m/%Y")%></p>    
+    </main>
+  </div>
+
+  <div class="container">
+    <a href="<%=edit_user_registration_path%>">
+     <button type="button" class="btn btn-primary btn-sm">Editer mon profil</button>
+    </a>
+  </div>
+
+</body>
