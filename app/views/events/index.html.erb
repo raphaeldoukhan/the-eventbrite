@@ -11,4 +11,30 @@
         </div>
 </section>
 
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <% @events.each do |event| %>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">              
+              <%=link_to "#{event.title}", event_path(event.id)%>
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted"><%= event.admin.first_name %> <%= event.admin.last_name %></h6>
+              <p class="card-text"><%= event.description %></p>
+                <div class="row">
+                  <div class="col">
+                    <%=event.attendances.count %> participant(s)
+                  </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>
+
 
